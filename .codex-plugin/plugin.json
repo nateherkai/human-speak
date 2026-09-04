@@ -1,0 +1,32 @@
+{
+  "name": "human-speak",
+  "version": "1.0.0",
+  "description": "Remove recognizable AI writing patterns while preserving the writer's meaning and personal voice.",
+  "author": {
+    "name": "Nate Herk",
+    "email": "253835467+nateherkai@users.noreply.github.com",
+    "url": "https://github.com/nateherkai"
+  },
+  "homepage": "https://github.com/nateherkai/human-speak",
+  "repository": "https://github.com/nateherkai/human-speak",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "humanize", "ai-slop", "voice"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Human Speak",
+    "shortDescription": "Make AI writing sound direct and human",
+    "longDescription": "Edit, audit, or draft writing without the canned phrases, fake insight, dramatic fragments, and filler that make AI-assisted copy sound generic. Human Speak protects the writer's meaning, vocabulary, cadence, humor, and useful imperfections.",
+    "developerName": "Nate Herk",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "websiteURL": "https://github.com/nateherkai/human-speak",
+    "privacyPolicyURL": "https://github.com/nateherkai/human-speak/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/nateherkai/human-speak/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Humanize this draft without flattening my voice.",
+      "Audit this copy for recognizable AI writing patterns.",
+      "Rewrite this so it sounds direct, specific, and natural."
+    ],
+    "brandColor": "#111827"
+  }
+}

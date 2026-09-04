@@ -1,0 +1,15 @@
+{
+  "name": "human-speak",
+  "version": "1.0.0",
+  "description": "Remove recognizable AI writing patterns while preserving the writer's meaning and personal voice.",
+  "author": {
+    "name": "Nate Herk",
+    "email": "253835467+nateherkai@users.noreply.github.com",
+    "url": "https://github.com/nateherkai"
+  },
+  "homepage": "https://github.com/nateherkai/human-speak",
+  "repository": "https://github.com/nateherkai/human-speak",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "humanize", "ai-slop", "voice"],
+  "skills": "./skills/"
+}

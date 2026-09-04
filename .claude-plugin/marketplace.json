@@ -1,0 +1,27 @@
+{
+  "name": "human-speak",
+  "description": "Writing tools that remove recognizable AI patterns without flattening the writer's voice.",
+  "owner": {
+    "name": "Nate Herk",
+    "email": "253835467+nateherkai@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "human-speak",
+      "displayName": "Human Speak",
+      "source": "./",
+      "description": "Make AI-assisted writing sound direct, specific, and human.",
+      "author": {
+        "name": "Nate Herk",
+        "email": "253835467+nateherkai@users.noreply.github.com",
+        "url": "https://github.com/nateherkai"
+      },
+      "homepage": "https://github.com/nateherkai/human-speak",
+      "repository": "https://github.com/nateherkai/human-speak",
+      "license": "MIT",
+      "keywords": ["writing", "editing", "humanize", "ai-slop"],
+      "category": "Productivity",
+      "tags": ["writing", "editing", "voice"]
+    }
+  ]
+}

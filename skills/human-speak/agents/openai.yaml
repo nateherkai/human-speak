@@ -1,0 +1,8 @@
+interface:
+  display_name: "Human Speak"
+  short_description: "Make AI writing sound direct and human"
+  brand_color: "#111827"
+  default_prompt: "Use $human-speak to edit this draft without flattening my voice."
+
+policy:
+  allow_implicit_invocation: true
