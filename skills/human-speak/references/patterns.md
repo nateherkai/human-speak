@@ -32,8 +32,13 @@ Cut sentences that only advertise the next sentence or narrate the writer's reac
 - "Here's what I mean."
 - "Let me be clear."
 - "The uncomfortable truth is..."
+- "But here's the X. The X is Y."
+- "I want to be specific about X, because this is where people get stuck."
+- variants that announce care or specificity, then justify the announcement with where people "go wrong," "struggle," or "mess this up"
 
 If the setup contains no information, delete it and say the thing.
+
+Start with the specific claim. Announcing that you will be specific adds no information.
 
 ## 3. Mechanical rhythms and dramatic fragments
 
@@ -71,8 +76,12 @@ Cut formulaic contrast structures:
 - "Not a tool. Not a feature. A revolution."
 - "Not A, not B, not C... D."
 - "You don't have an X problem. You have a Y problem."
+- "No X. No Y. Just Z."
+- two-beat negative fragments such as "No setup, no cost." or "No key. No login."
 
 State the stronger claim directly.
+
+Merge negative fragments into a sentence even when the individual claims are concrete: "You don't need a key or a login." Keep a factual contrast when it corrects a belief the reader actually holds or explains a meaningful difference. Do not invent a rejected alternative to make the preferred option sound stronger.
 
 ## 6. Setup openers
 
@@ -84,6 +93,7 @@ Cut generic openings that postpone the subject:
 - "Here's the thing..."
 - "I'll be honest..."
 - "Honestly," or "And honestly," as a reflexive opener
+- "Honestly?" or "Let's be real" before a routine claim
 
 Keep an opener when it communicates real uncertainty, admission, or personality rather than manufactured intimacy.
 
@@ -159,6 +169,8 @@ Cut these when they delay the point:
 - "When it comes to."
 - "At its core."
 - "In today's world."
+- "In today's fast-paced digital world."
+- "As AI continues to reshape the landscape."
 - "In the age of."
 - "In the world of."
 - "The reality is."

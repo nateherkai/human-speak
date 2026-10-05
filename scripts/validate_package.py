@@ -17,7 +17,9 @@ REQUIRED = [
     SKILL,
     ROOT / "skills" / "human-speak" / "references" / "patterns.md",
     ROOT / "skills" / "human-speak" / "references" / "evaluation.md",
+    ROOT / "skills" / "human-speak" / "references" / "top-20.md",
     ROOT / "README.md",
+    ROOT / "CHANGELOG.md",
     ROOT / "LICENSE",
     ROOT / "PRIVACY.md",
     ROOT / "TERMS.md",
@@ -45,6 +47,9 @@ for label, manifest in (("Codex", codex), ("Claude", claude)):
     if not manifest.get("description"):
         fail(f"{label} manifest description is required")
 
+if codex["version"] != claude["version"]:
+    fail("Claude and Codex plugin versions must match")
+
 if marketplace.get("name") != "human-speak":
     fail("Claude marketplace name must be human-speak")
 plugins = marketplace.get("plugins")
@@ -65,6 +70,18 @@ if not re.search(r"^name:\s*human-speak\s*$", frontmatter, re.MULTILINE):
     fail("SKILL.md frontmatter must declare name: human-speak")
 if not re.search(r"^description:\s*\S", frontmatter, re.MULTILINE):
     fail("SKILL.md frontmatter must include a description")
+
+version_match = re.search(r'^\s+version:\s*"([0-9.]+)"\s*$', frontmatter, re.MULTILINE)
+if not version_match or version_match.group(1) != codex["version"]:
+    fail("skill metadata version must match the plugin versions")
+
+for path in (ROOT / "skills" / "human-speak").rglob("*.md"):
+    for target in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
+        if "://" in target or target.startswith("#"):
+            continue
+        destination = (path.parent / target.split("#", 1)[0]).resolve()
+        if not destination.is_relative_to(ROOT.resolve()) or not destination.is_file():
+            fail(f"missing or nonportable reference in {path.relative_to(ROOT)}: {target}")
 
 for path in ROOT.rglob("*"):
     if path.is_file() and path.suffix.lower() in {".md", ".json", ".yaml", ".yml", ".py"}:

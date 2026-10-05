@@ -1,6 +1,6 @@
 {
   "name": "human-speak",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Remove recognizable AI writing patterns while preserving the writer's meaning and personal voice.",
   "author": {
     "name": "Nate Herk",

@@ -6,6 +6,8 @@ Human Speak edits, audits, and drafts writing that sounds direct, specific, and 
 
 It also protects the parts many editing prompts erase: vocabulary, cadence, bluntness, humor, uncertainty, digressions, and useful imperfections.
 
+Current version: **1.1.0**. See the [changes](CHANGELOG.md) and the [ranked 20-pattern checklist](skills/human-speak/references/top-20.md).
+
 ## Install the skill
 
 The simplest cross-platform installation uses the open skills installer:
@@ -32,6 +34,14 @@ Claude Code namespaces plugin skills, so the plugin form is available as `/human
 ### Codex
 
 After installation, invoke the skill as `$human-speak`. Codex uses `$skill-name` syntax rather than slash commands.
+
+### Updating an existing installation
+
+GitHub updates do not automatically replace copies already installed on your computer. Reinstall using your original installation method, or ask your assistant:
+
+```text
+Update my installed human-speak skill from https://github.com/nateherkai/human-speak to the latest version. Verify the installed SKILL.md, pattern library, and evaluation checklist against the repository.
+```
 
 ## Use it
 
@@ -79,6 +89,8 @@ The audit names each pattern, quotes the evidence, and gives a short fix. It doe
 
 The full catalog lives in [`patterns.md`](skills/human-speak/references/patterns.md).
 
+The skill includes its own rules and final check. It does not need Nate's private workspace or a separate phrase list. Invoke it for an edit, audit, or draft; installing it does not apply an automatic filter to every response.
+
 ## Repository structure
 
 ```text
@@ -88,6 +100,7 @@ The full catalog lives in [`patterns.md`](skills/human-speak/references/patterns
 skills/human-speak/SKILL.md
 skills/human-speak/references/patterns.md
 skills/human-speak/references/evaluation.md
+skills/human-speak/references/top-20.md
 ```
 
 ## Development

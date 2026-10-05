@@ -21,10 +21,13 @@ Run this check after an edit or new draft. Fix every failure before returning th
 ## Pattern check
 
 - Secret-insight framing, tee-ups, colon reveals, binary reframes, negative lists, and fake questions are removed.
+- Two-beat negative fragments and "No X. No Y. Just Z." are written as complete factual sentences, even when their individual claims are concrete.
+- Announcements such as "I want to be specific, because this is where people get stuck" are replaced with the specific claim.
 - Superficial analysis, importance puffery, vague authority, and reaction narration are removed or supported.
 - Generic filler, empty adverbs, inflated buzzwords, and fake-strong verbs are removed unless they carry precise meaning.
 - Fake-profound endings and recap paragraphs are removed.
 - Em dashes, unnecessary emojis, decorative bold, tiny headings, and unnecessary lists are absent unless requested.
+- Rephrased variants are checked at sentence and paragraph level; swapping words has not left the same staged reveal or mechanical rhythm in place.
 
 ## Final read
 

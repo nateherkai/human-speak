@@ -3,6 +3,7 @@ name: human-speak
 description: Edit, audit, or draft writing to remove recognizable AI phrasing and structural habits while preserving the writer's meaning and personal voice. Use when the user asks to humanize writing, remove AI slop, make copy sound natural, audit a draft for AI patterns, or invokes human-speak.
 metadata:
   short-description: Make AI writing sound direct and human
+  version: "1.1.0"
 ---
 
 # Human Speak
@@ -22,6 +23,8 @@ The user's instructions take precedence over this skill. Respect requested tone,
 ## Before working
 
 Read [references/patterns.md](references/patterns.md) for the complete pattern and phrase library.
+
+When the user asks for the strongest giveaways or a prioritized checklist, use [references/top-20.md](references/top-20.md). Its order is editorial guidance, not an authorship detector.
 
 Read the entire draft or source before changing it. Identify:
 
@@ -47,5 +50,7 @@ If no draft or usable source is provided, ask for it. For a new draft, proceed w
 ## Finish
 
 After an edit or new draft, check the result against [references/evaluation.md](references/evaluation.md). Fix failures before returning the answer.
+
+Check sentence and paragraph shapes as well as exact phrases. Rewording a tee-up, contrast, or negative fragment does not remove the pattern. Rewrite the underlying thought as a direct sentence, then check again.
 
 For an audit, return only evidence-backed findings. If no listed pattern appears, say so plainly. Do not manufacture findings to make the audit look useful.
